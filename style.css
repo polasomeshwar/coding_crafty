@@ -1,0 +1,284 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #3f2180;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Subtle animations for buttons and links */
+.btn, nav a {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
+ nav a:hover {
+    background-color: white;
+    color: #13062f;
+ }
+
+/* Logo styles */
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add margin to create spacing between the logo and the site title */
+}
+
+
+/* Hero section styles */
+#hero {
+    background-image: linear-gradient(#3f2180,#160835);
+    background-size:auto;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#hero h2 {
+    font-size: 36px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b6bdd2;
+    color:#13062f;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    border: 1px solid white;
+}
+
+/* Course section styles */
+#courses {
+    background-color: #13062f;
+    padding: 40px 0;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course {
+    flex: 0 1 calc(48% - 20px); /* Each course takes one-third of the available space with 20px margin in between */
+    background-image: linear-gradient(#3f2180,#160835);
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(219, 219, 219, 0.1); /* Add a subtle shadow */
+    transition: box-shadow 0.3s; /* Apply a transition for the shadow */
+
+    /* Hover effect */
+    cursor: pointer;
+}
+
+.course:hover {
+    box-shadow: 0 8px 15px rgba(0, 52, 67, 0.2); /* Elevate the box shadow on hover */
+}
+
+
+.courses h2{
+    text-align: center;
+}
+.course h3 {
+    font-size: 24px;
+}
+
+.course p {
+    font-size: 16px;
+}
+
+.motivation {
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Register section styles */
+#register {
+    text-align: center;
+    background-image: linear-gradient(#3f2180,#160835);
+    color: white;
+    padding: 60px 0;
+}
+
+#register h2 {
+    font-size: 36px;
+}
+
+#register p {
+    font-size: 18px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 20px;
+}
+
+/* Contact section styles */
+#contact {
+    background-image: linear-gradient(#160835,#3f2180);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fca311;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #303030;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    /* Hero adjustments */
+    #hero {
+        padding: 60px 0;
+    }
+
+    #hero h2 {
+        font-size: 28px;
+    }
+
+    #courses .course {
+        padding: 10px;
+    }
+
+    #courses h3 {
+        font-size: 24px;
+    }
+
+    #courses p {
+        font-size: 16px;
+    }
+
+    .motivation {
+        font-size: 14px;
+    }
+
+    #register {
+        padding: 40px 0;
+    }
+
+    #register h2 {
+        font-size: 28px;
+    }
+
+    #contact {
+        padding: 40px 0;
+    }
+
+    #contact-info {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
