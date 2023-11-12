@@ -3,11 +3,7 @@ body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
-hr{
-    color: white;
-    padding: 0px;
-    margin: 0px;
-}
+
 /* Set a background color and font styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -128,23 +124,31 @@ nav a:hover {
     border: 1px solid white;
 }
 
+
 /* Course section styles */
-#courses {
+.ourc{
     background-color: #13062f;
-    padding: 40px 0;
+    color: white;
+}
+
+#courses{
+    background-color: #13062f;
+}
+#courses > .container{
+    background-color: #13062f;
     color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .course {
-    flex: 0 1 calc(48% - 20px); /* Each course takes one-third of the available space with 20px margin in between */
+    flex: 2 2 33%;
+    box-sizing: border-box;
     background-image: linear-gradient(#3f2180,#160835);
     padding: 20px;
+    margin: 10px;
     color: white;
     border-radius: 5px;
-    margin: 20px 0;
     box-shadow: 0 2px 5px rgba(219, 219, 219, 0.1); /* Add a subtle shadow */
     transition: box-shadow 0.3s; /* Apply a transition for the shadow */
 
@@ -155,8 +159,6 @@ nav a:hover {
 .course:hover {
     box-shadow: 0 8px 15px rgba(0, 52, 67, 0.2); /* Elevate the box shadow on hover */
 }
-
-
 .courses h2{
     text-align: center;
 }
@@ -253,6 +255,7 @@ footer {
     #hero h2 {
         font-size: 28px;
     }
+    
 
     #courses .course {
         padding: 10px;
